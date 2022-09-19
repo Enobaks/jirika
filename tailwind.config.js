@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         "sideNav-white": "#F0F0F0",
         "body-grey": "#E5E5E5",
+        carton: "#D0A564",
+        primary: "#2D2F7E",
       },
     },
   },
