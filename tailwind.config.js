@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       colors: {
         "sideNav-white": "#F0F0F0",
-        "body-grey": "#E5E5E5",
+        "body-grey": "#f8f8f8",
         carton: "#D0A564",
         primary: "#2D2F7E",
+        arc: "#e4e4ec",
       },
     },
   },

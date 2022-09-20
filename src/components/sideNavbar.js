@@ -8,7 +8,7 @@ const SideNavbar = () => {
   let handleHover = () => {};
 
   return (
-    <div className=" sideNavContainer w-64 h-full bg-sideNav-white z-20 drop-shadow-md lg:flex flex-col items-center justify-between ">
+    <div className=" sideNavContainer w-64 h-full bg-white z-20 drop-shadow-md lg:flex flex-col items-center justify-between ">
       <Link to="/" className="logo flex mt-6 mb-5">
         <div className="logo-wrap flex justify-center items-center w-full">
           <div className="sg flex items-center w-28">
