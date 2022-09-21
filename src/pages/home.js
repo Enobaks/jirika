@@ -146,6 +146,11 @@ const Home = () => {
               </svg>
             </div>
           </div>
+          <div className="sub-category flex w-1/2 justify-between mt-1.5">
+            <p className="font-light text-sm">All</p>
+            <p className="font-light text-sm">Credit</p>
+            <p className="font-light text-sm">Debit</p>
+          </div>
         </div>
         <div className="transactions-summary bg-violet-400 w-1/3"></div>
       </div>
