@@ -9,6 +9,7 @@ module.exports = {
         carton: "#D0A564",
         primary: "#2D2F7E",
         arc: "#e4e4ec",
+        mute: "rgba(0, 0, 0, 0.2)",
       },
     },
   },

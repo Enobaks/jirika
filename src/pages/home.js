@@ -1,4 +1,6 @@
 import React from "react";
+import BoleFestival from "../images/bole-festival.png";
+import SinglesParty from "../images/singles-party.png";
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
             <h5 className="text-2xl font-semibold text-carton p-3">
               Wallet Balance
             </h5>
-            <p className="text-2xl font-normal text-carton mt-6 p-3">#356.90</p>
+            <p className="text-2xl font-normal text-carton mt-6 p-3">
+              {"\u20A6"}356.90
+            </p>
             <div className="action-summary mt-14 p-3 flex justify-between w-11/12">
               <div className="deposit-wrap flex flex-col justify-around items-center h-28">
                 <div className="w-9 h-9 bg-primary rounded-md flex items-center justify-center">
@@ -90,8 +94,59 @@ const Home = () => {
             </div>
           </div>
           <h5 className="mt-7 text-2xl font-medium">Top Event</h5>
+          <div className="picture-wrap mt-7 flex">
+            <div className="sinlge-party relative">
+              <img src={SinglesParty} alt="Singles Party" />
+              <div className="single-party-text absolute top-28 left-3">
+                <p className="text-2xl text-white font-extrabold">
+                  Ph Singles Party 2021.
+                </p>
+                <p className="text-sm text-white">
+                  In the city of Port Harcourt
+                </p>
+                <p className="text-sm font-bold text-white mt-2">
+                  Multi Ticket Available
+                </p>
+              </div>
+            </div>
+            <div className="bole-festival ml-2 relative pt-3">
+              <img src={BoleFestival} alt="Singles Party" />
+              <div className="single-party-text absolute top-28 left-3">
+                <p className="text-2xl text-white font-extrabold">
+                  BoleFestival 2022.
+                </p>
+                <p className="text-sm text-white">
+                  In the city of Port Harcourt
+                </p>
+                <p className="text-sm font-bold text-white mt-2">
+                  Multi Ticket Available
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="transactions-summary bg-lime-400 w-1/3"></div>
+        <div className="transactions-summary w-1/3">
+          <div className="title flex justify-between">
+            <h1 className="text-2xl">Transaction</h1>
+            <div className="view-wrap flex items-center">
+              <p className="mr-6 text-mute text-sm font-normal">View All</p>
+              <svg
+                width="11"
+                height="17"
+                viewBox="0 0 11 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L10 8.14286L1.20455 16"
+                  stroke="black"
+                  stroke-opacity="0.2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
         <div className="transactions-summary bg-violet-400 w-1/3"></div>
       </div>
     </div>
