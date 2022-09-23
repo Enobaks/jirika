@@ -347,14 +347,14 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-credit">-{"\u20A6"}3,122</span>
+            <span className="text-2xl text-credit">{"\u20A6"}3,122</span>
           </div>
           <div className="upcoming-event">
-            <div className="upcoming-wrap flex justify-between items-center">
+            <div className="upcoming-wrap flex justify-between items-center mb-5">
               <h1 className="text-2xl font-medium">Upcoming Event</h1>
               <span className="font-normal text-sm text-mute">Skip</span>
             </div>
-            <div className="event">
+            <div className="event border rounded-md border-mute p-3">
               <div className="date-wrap">
                 <p>
                   <span></span>Mar 20
@@ -362,10 +362,12 @@ const Home = () => {
                 <span>...</span>
               </div>
               <p className="text-2xl">Omah Lay Rave show</p>
-              <p className="text-muted font-light" style={{ fontSize: "10px" }}>
+              <p className="text-mute font-light" style={{ fontSize: "10px" }}>
                 One time payment
               </p>
-              <button className="text-lg font-normal">Pre Book</button>
+              <button className="text-lg font-normal w-36 h-12 bg-black text-white rounded-md">
+                Pre Book
+              </button>
             </div>
           </div>
         </div>
