@@ -355,17 +355,20 @@ const Home = () => {
               <span className="font-normal text-sm text-mute">Skip</span>
             </div>
             <div className="event border rounded-md border-mute p-3">
-              <div className="date-wrap">
+              <div className="date-wrap flex justify-between items-center mb-6">
                 <p>
                   <span></span>Mar 20
                 </p>
                 <span>...</span>
               </div>
-              <p className="text-2xl">Omah Lay Rave show</p>
-              <p className="text-mute font-light" style={{ fontSize: "10px" }}>
+              <p className="text-2xl mb-6">Omah Lay Rave show</p>
+              <p
+                className="text-mute font-light mb-8"
+                style={{ fontSize: "10px" }}
+              >
                 One time payment
               </p>
-              <button className="text-lg font-normal w-36 h-12 bg-black text-white rounded-md">
+              <button className="text-lg font-normal w-36 h-12 bg-black text-white rounded-md mb-1">
                 Pre Book
               </button>
             </div>
