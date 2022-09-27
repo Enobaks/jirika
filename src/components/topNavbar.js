@@ -4,13 +4,13 @@ import ProfilePicture from "../images/profile2.png";
 const topNavbar = () => {
   return (
     <div className="nav_container w-full h-16 mb-16 mt-4">
-      <div className="nav-wrap flex flex-row justify-between items-center w-11/12 h-full p-3.5 m-auto">
+      <div className="nav-wrap flex flex-row justify-between items-center w-11/12 h-full lg:p-3.5 m-auto">
         <div className="menu-bar lg:hidden">
-          <i class="fa-solid fa-bars text-lg"></i>
+          <i class="fa-solid fa-bars text-xl"></i>
         </div>
         <div className="nat flex justify-between md:w-1/2 w-9/12 lg:w-full">
           <div className="search-icon lg:hidden flex items-center">
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass text-xl"></i>
           </div>
           <div className="hidden lg:block search-wrap w-2/5 relative">
             <form className=" hidden form-wrap lg:flex">
