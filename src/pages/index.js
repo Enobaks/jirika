@@ -7,7 +7,7 @@ const landingPage = () => {
   return (
     <div className="w-full  h-auto bg-body-grey flex">
       <SideNavbar />
-      <div className="user-section w-full h-auto ml-64">
+      <div className="user-section w-full h-auto ml-56">
         <TopNavbar />
 
         <Outlet />

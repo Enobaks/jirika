@@ -5,8 +5,9 @@ import SinglesParty from "../images/singles-party.png";
 const Home = () => {
   return (
     <div className="home-wrap w-full p-3">
-      <div className="flex gap-2">
-        <div className="greetings w-2/5">
+      <div className="flex flex-col lg:flex-row gap-2">
+        {/* Greeting */}
+        <div className="greetings w-11/12 lg:w-2/5">
           <h1 className="text-2xl font-medium text-primary p-3">
             Hello, Clinton Elvis{" "}
           </h1>
@@ -125,7 +126,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="transactions-summary w-2/5">
+        {/* Transaction Section */}
+        <div className="transactions-summary w-11/12 lg:w-2/5 pl-4">
           <div className="title flex justify-between">
             <h1 className="text-2xl font-medium">Transaction</h1>
             <div className="view-wrap flex items-center">
@@ -147,9 +149,9 @@ const Home = () => {
             </div>
           </div>
           <div className="sub-category flex w-1/2 justify-between mt-1.5 mb-4">
-            <p className="font-light text-sm">All</p>
-            <p className="font-light text-sm">Credit</p>
-            <p className="font-light text-sm">Debit</p>
+            <p className="font-light text-sm hover:underline">All</p>
+            <p className="font-light text-sm hover:underline">Credit</p>
+            <p className="font-light text-sm hover:underline">Debit</p>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -374,7 +376,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="transactions-summary w-1/3 pl-3">
+        {/* Live Activity */}
+        <div className="transactions-summary w-11/12 lg:w-1/3 pl-4">
           <h1 className="text-2xl font-medium mb-12">Live activity</h1>
           <div className="activities-wrap flex flex-col justify-center items-center ">
             <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
