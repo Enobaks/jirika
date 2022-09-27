@@ -125,9 +125,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="transactions-summary w-2/4">
+        <div className="transactions-summary w-2/5">
           <div className="title flex justify-between">
-            <h1 className="text-2xl">Transaction</h1>
+            <h1 className="text-2xl font-medium">Transaction</h1>
             <div className="view-wrap flex items-center">
               <p className="mr-6 text-mute text-sm font-normal">View All</p>
               <svg
@@ -354,7 +354,7 @@ const Home = () => {
               <h1 className="text-2xl font-medium">Upcoming Event</h1>
               <span className="font-normal text-sm text-mute">Skip</span>
             </div>
-            <div className="event border rounded-md border-mute p-3">
+            <div className="event border rounded-md border-mute bg-white p-3">
               <div className="date-wrap flex justify-between items-center mb-6">
                 <p>
                   <span></span>Mar 20
@@ -374,7 +374,38 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="transactions-summary bg-violet-400 w-1/3"></div>
+        <div className="transactions-summary w-1/3 pl-3">
+          <h1 className="text-2xl font-medium mb-12">Live activity</h1>
+          <div className="activities-wrap flex flex-col justify-center items-center ">
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+              <div className="wrap flex flex-col items-center">
+                <p className="font-medium text-base inline">Bole Festival</p>
+                <p className="font-medium text-lg text-live inline">Live</p>
+                <p className="text-sm font-medium inline">Port harcourt</p>
+                <p className="text-base text-mute inline">pleasure park</p>
+                <p className="text-book font-medium text-sm inline">Book now</p>
+              </div>
+            </div>
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+              <div className="wrap flex flex-col items-center">
+                <p className="font-medium text-base inline">Bole Festival</p>
+                <p className="font-medium text-lg text-live inline">Live</p>
+                <p className="text-sm font-medium inline">Port harcourt</p>
+                <p className="text-base text-mute inline">pleasure park</p>
+                <p className="text-book font-medium text-sm inline">Book now</p>
+              </div>
+            </div>
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+              <div className="wrap flex flex-col items-center">
+                <p className="font-medium text-base inline">Bole Festival</p>
+                <p className="font-medium text-lg text-live inline">Live</p>
+                <p className="text-sm font-medium inline">Port harcourt</p>
+                <p className="text-base text-mute inline">pleasure park</p>
+                <p className="text-book font-medium text-sm inline">Book now</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

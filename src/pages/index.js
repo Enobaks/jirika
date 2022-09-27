@@ -5,9 +5,9 @@ import TopNavbar from "../components/topNavbar";
 
 const landingPage = () => {
   return (
-    <div className="w-full h-screen bg-body-grey flex">
+    <div className="w-full  h-auto bg-body-grey flex">
       <SideNavbar />
-      <div className="user-section w-full h-auto">
+      <div className="user-section w-full h-auto ml-64">
         <TopNavbar />
 
         <Outlet />
