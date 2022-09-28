@@ -10,8 +10,6 @@ module.exports = {
         primary: "#2D2F7E",
         arc: "#e4e4ec",
         mute: "rgba(0, 0, 0, 0.2)",
-        debit: "#7576a9",
-        credit: "#a0d387",
         completed: "#FFB961",
         live: "#35A500",
         book: "#4339F2",

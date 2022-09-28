@@ -98,7 +98,7 @@ const Home = () => {
           <div className="picture-wrap mt-7 flex">
             <div className="sinlge-party relative">
               <img src={SinglesParty} alt="Singles Party" />
-              <div className="single-party-text absolute top-28 left-3">
+              <div className="single-party-text absolute top-60 left-3">
                 <p className="text-2xl text-white font-extrabold">
                   Ph Singles Party 2021.
                 </p>
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
             <div className="bole-festival ml-2 relative pt-3">
               <img src={BoleFestival} alt="Singles Party" />
-              <div className="single-party-text absolute top-16 left-3">
+              <div className="single-party-text absolute top-52 left-3">
                 <p className="text-2xl text-white font-extrabold">
                   BoleFestival 2022.
                 </p>
@@ -127,7 +127,7 @@ const Home = () => {
           </div>
         </div>
         {/* Transaction Section */}
-        <div className="transactions-summary w-11/12 lg:w-2/5 pl-4">
+        <div className="transactions-summary w-full mt-16 lg:w-2/5 p-4 lg:pl-4">
           <div className="title flex justify-between">
             <h1 className="text-2xl font-medium">Transaction</h1>
             <div className="view-wrap flex items-center">
@@ -180,7 +180,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-debit">-{"\u20A6"}3,122</span>
+            <span className="text-2xl text-primary">-{"\u20A6"}3,122</span>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -215,7 +215,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-debit">-{"\u20A6"}3,122</span>
+            <span className="text-2xl text-primary">-{"\u20A6"}3,122</span>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -250,7 +250,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-debit">-{"\u20A6"}2,000</span>
+            <span className="text-2xl text-primary">-{"\u20A6"}2,000</span>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -285,7 +285,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-debit">-{"\u20A6"}3,022</span>
+            <span className="text-2xl text-primary">-{"\u20A6"}3,022</span>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -320,7 +320,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-debit">-{"\u20A6"}2,500</span>
+            <span className="text-2xl text-primary">-{"\u20A6"}2,500</span>
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
@@ -349,7 +349,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <span className="text-2xl text-credit">{"\u20A6"}3,122</span>
+            <span className="text-2xl text-live">{"\u20A6"}3,122</span>
           </div>
           <div className="upcoming-event">
             <div className="upcoming-wrap flex justify-between items-center mb-5">
@@ -377,10 +377,10 @@ const Home = () => {
           </div>
         </div>
         {/* Live Activity */}
-        <div className="transactions-summary w-11/12 lg:w-1/3 pl-4">
+        <div className="transactions-summary w-full mt-16  lg:w-1/3 pl-4">
           <h1 className="text-2xl font-medium mb-12">Live activity</h1>
-          <div className="activities-wrap flex flex-col justify-center items-center ">
-            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+          <div className="activities-wrap flex flex-col md:flex-row md:flex-wrap md:gap-4 lg:flex-col justify-center items-center ">
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md md:mb-6 mb-12">
               <div className="wrap flex flex-col items-center">
                 <p className="font-medium text-base inline">Bole Festival</p>
                 <p className="font-medium text-lg text-live inline">Live</p>
@@ -389,7 +389,7 @@ const Home = () => {
                 <p className="text-book font-medium text-sm inline">Book now</p>
               </div>
             </div>
-            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md md:mb-6 mb-12">
               <div className="wrap flex flex-col items-center">
                 <p className="font-medium text-base inline">Bole Festival</p>
                 <p className="font-medium text-lg text-live inline">Live</p>
@@ -398,7 +398,7 @@ const Home = () => {
                 <p className="text-book font-medium text-sm inline">Book now</p>
               </div>
             </div>
-            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md mb-12">
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md md:mb-6 mb-12">
               <div className="wrap flex flex-col items-center">
                 <p className="font-medium text-base inline">Bole Festival</p>
                 <p className="font-medium text-lg text-live inline">Live</p>
