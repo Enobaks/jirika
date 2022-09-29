@@ -67,8 +67,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M8.41511 0.395105C8.79624 0.277966 9.20375 0.277966 9.58488 0.395105L12.5706 1.31277C14.1283 1.79152 15.6075 2.49538 16.9616 3.40203C18.0147 4.10722 17.5155 5.74997 16.2481 5.74997H1.75191C0.484457 5.74997 -0.0147414 4.10722 1.03841 3.40204C2.39244 2.49538 3.87174 1.79152 5.42938 1.31277L8.41511 0.395105ZM9.1442 1.82891C9.05023 1.80003 8.94976 1.80003 8.85579 1.82891L5.87006 2.74658C4.68925 3.1095 3.55791 3.61454 2.50069 4.24997H15.4993C14.4421 3.61454 13.3107 3.1095 12.1299 2.74658L9.1442 1.82891Z"
                       fill="#FFB961"
                     />
@@ -98,7 +98,7 @@ const Home = () => {
           <div className="picture-wrap mt-7 flex">
             <div className="sinlge-party relative">
               <img src={SinglesParty} alt="Singles Party" />
-              <div className="single-party-text absolute top-60 left-3">
+              <div className="single-party-text absolute top-60 lg:top-32 left-3">
                 <p className="text-2xl text-white font-extrabold">
                   Ph Singles Party 2021.
                 </p>
@@ -112,7 +112,7 @@ const Home = () => {
             </div>
             <div className="bole-festival ml-2 relative pt-3">
               <img src={BoleFestival} alt="Singles Party" />
-              <div className="single-party-text absolute top-52 left-3">
+              <div className="single-party-text absolute top-52 lg:top-24 left-3">
                 <p className="text-2xl text-white font-extrabold">
                   BoleFestival 2022.
                 </p>
@@ -142,8 +142,8 @@ const Home = () => {
                 <path
                   d="M1 1L10 8.14286L1.20455 16"
                   stroke="black"
-                  stroke-opacity="0.2"
-                  stroke-linecap="round"
+                  strokeOpacity="0.2"
+                  strokeLinecap="round"
                 />
               </svg>
             </div>
@@ -201,8 +201,8 @@ const Home = () => {
                     fill="#FFB961"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M4.31673 0.768758C7.40429 0.423679 10.5957 0.423679 13.6832 0.768758C15.5096 0.972883 16.9845 2.41153 17.1994 4.24849C17.5686 7.40541 17.5686 10.5946 17.1994 13.7515C16.9845 15.5885 15.5096 17.0271 13.6832 17.2313C10.5957 17.5763 7.40429 17.5763 4.31673 17.2313C2.49035 17.0271 1.01545 15.5885 0.800605 13.7515C0.431374 10.5946 0.431374 7.40541 0.800605 4.24849C1.01545 2.41153 2.49035 0.972883 4.31673 0.768758ZM13.5166 2.25948C10.5398 1.92677 7.46017 1.92677 4.48334 2.25948C3.33891 2.38738 2.42286 3.29063 2.29045 4.42274C1.93476 7.46389 1.93476 10.5361 2.29045 13.5773C2.42286 14.7094 3.33891 15.6126 4.48334 15.7405C7.46017 16.0732 10.5398 16.0732 13.5166 15.7405C14.6611 15.6126 15.5771 14.7094 15.7095 13.5773C16.0652 10.5361 16.0652 7.46389 15.7095 4.42274C15.5771 3.29063 14.6611 2.38738 13.5166 2.25948Z"
                     fill="#FFB961"
                   />
@@ -236,8 +236,8 @@ const Home = () => {
                     fill="#FFB961"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M4.31673 0.768758C7.40429 0.423679 10.5957 0.423679 13.6832 0.768758C15.5096 0.972883 16.9845 2.41153 17.1994 4.24849C17.5686 7.40541 17.5686 10.5946 17.1994 13.7515C16.9845 15.5885 15.5096 17.0271 13.6832 17.2313C10.5957 17.5763 7.40429 17.5763 4.31673 17.2313C2.49035 17.0271 1.01545 15.5885 0.800605 13.7515C0.431374 10.5946 0.431374 7.40541 0.800605 4.24849C1.01545 2.41153 2.49035 0.972883 4.31673 0.768758ZM13.5166 2.25948C10.5398 1.92677 7.46017 1.92677 4.48334 2.25948C3.33891 2.38738 2.42286 3.29063 2.29045 4.42274C1.93476 7.46389 1.93476 10.5361 2.29045 13.5773C2.42286 14.7094 3.33891 15.6126 4.48334 15.7405C7.46017 16.0732 10.5398 16.0732 13.5166 15.7405C14.6611 15.6126 15.5771 14.7094 15.7095 13.5773C16.0652 10.5361 16.0652 7.46389 15.7095 4.42274C15.5771 3.29063 14.6611 2.38738 13.5166 2.25948Z"
                     fill="#FFB961"
                   />
@@ -271,8 +271,8 @@ const Home = () => {
                     fill="#FFB961"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M4.31673 0.768758C7.40429 0.423679 10.5957 0.423679 13.6832 0.768758C15.5096 0.972883 16.9845 2.41153 17.1994 4.24849C17.5686 7.40541 17.5686 10.5946 17.1994 13.7515C16.9845 15.5885 15.5096 17.0271 13.6832 17.2313C10.5957 17.5763 7.40429 17.5763 4.31673 17.2313C2.49035 17.0271 1.01545 15.5885 0.800605 13.7515C0.431374 10.5946 0.431374 7.40541 0.800605 4.24849C1.01545 2.41153 2.49035 0.972883 4.31673 0.768758ZM13.5166 2.25948C10.5398 1.92677 7.46017 1.92677 4.48334 2.25948C3.33891 2.38738 2.42286 3.29063 2.29045 4.42274C1.93476 7.46389 1.93476 10.5361 2.29045 13.5773C2.42286 14.7094 3.33891 15.6126 4.48334 15.7405C7.46017 16.0732 10.5398 16.0732 13.5166 15.7405C14.6611 15.6126 15.5771 14.7094 15.7095 13.5773C16.0652 10.5361 16.0652 7.46389 15.7095 4.42274C15.5771 3.29063 14.6611 2.38738 13.5166 2.25948Z"
                     fill="#FFB961"
                   />
@@ -306,8 +306,8 @@ const Home = () => {
                     fill="#FFB961"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M4.31673 0.768758C7.40429 0.423679 10.5957 0.423679 13.6832 0.768758C15.5096 0.972883 16.9845 2.41153 17.1994 4.24849C17.5686 7.40541 17.5686 10.5946 17.1994 13.7515C16.9845 15.5885 15.5096 17.0271 13.6832 17.2313C10.5957 17.5763 7.40429 17.5763 4.31673 17.2313C2.49035 17.0271 1.01545 15.5885 0.800605 13.7515C0.431374 10.5946 0.431374 7.40541 0.800605 4.24849C1.01545 2.41153 2.49035 0.972883 4.31673 0.768758ZM13.5166 2.25948C10.5398 1.92677 7.46017 1.92677 4.48334 2.25948C3.33891 2.38738 2.42286 3.29063 2.29045 4.42274C1.93476 7.46389 1.93476 10.5361 2.29045 13.5773C2.42286 14.7094 3.33891 15.6126 4.48334 15.7405C7.46017 16.0732 10.5398 16.0732 13.5166 15.7405C14.6611 15.6126 15.5771 14.7094 15.7095 13.5773C16.0652 10.5361 16.0652 7.46389 15.7095 4.42274C15.5771 3.29063 14.6611 2.38738 13.5166 2.25948Z"
                     fill="#FFB961"
                   />
@@ -380,6 +380,15 @@ const Home = () => {
         <div className="transactions-summary w-full mt-16  lg:w-1/3 pl-4">
           <h1 className="text-2xl font-medium mb-12">Live activity</h1>
           <div className="activities-wrap flex flex-col md:flex-row md:flex-wrap md:gap-4 lg:flex-col justify-center items-center ">
+            <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md md:mb-6 mb-12">
+              <div className="wrap flex flex-col items-center">
+                <p className="font-medium text-base inline">Bole Festival</p>
+                <p className="font-medium text-lg text-live inline">Live</p>
+                <p className="text-sm font-medium inline">Port harcourt</p>
+                <p className="text-base text-mute inline">pleasure park</p>
+                <p className="text-book font-medium text-sm inline">Book now</p>
+              </div>
+            </div>
             <div className="w-52 h-40 flex  items-center justify-center border border-mute rounded-md md:mb-6 mb-12">
               <div className="wrap flex flex-col items-center">
                 <p className="font-medium text-base inline">Bole Festival</p>
