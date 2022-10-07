@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-wrap w-full p-3">
       <div className="flex flex-col lg:flex-row gap-2">
         {/* Greeting */}
-        <div className="greetings w-11/12 lg:w-2/5">
+        <div className="greetings w-full md:pl-3  lg:w-2/5">
           <h1 className="text-2xl font-medium text-primary p-3">
             Hello, Clinton Elvis{" "}
           </h1>
@@ -96,9 +96,13 @@ const Home = () => {
           </div>
           <h5 className="mt-7 text-2xl font-medium">Top Event</h5>
           <div className="picture-wrap mt-7 flex">
-            <div className="sinlge-party relative">
-              <img src={SinglesParty} alt="Singles Party" />
-              <div className="single-party-text absolute top-60 lg:top-32 left-3">
+            <div className="sinlge-party relative md:flex md:justify-center">
+              <img
+                src={SinglesParty}
+                alt="Singles Party"
+                className="md:w-4/5 lg:w-auto h-auto"
+              />
+              <div className="single-party-text absolute top:0 md:top-60 lg:top-  28 lg:left-2 left-3 md:left-14">
                 <p className="text-2xl text-white font-extrabold">
                   Ph Singles Party 2021.
                 </p>
@@ -110,9 +114,13 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="bole-festival ml-2 relative pt-3">
-              <img src={BoleFestival} alt="Singles Party" />
-              <div className="single-party-text absolute top-52 lg:top-24 left-3">
+            <div className="bole-festival ml-2 relative pt-3 md:flex md:justify-center">
+              <img
+                src={BoleFestival}
+                alt="Bole Festival"
+                className="md:w-4/5 lg:w-auto h-auto"
+              />
+              <div className="single-party-text absolute top-0 md:top-60 lg:top-24 lg:left-2 md:left-14 left-3">
                 <p className="text-2xl text-white font-extrabold">
                   BoleFestival 2022.
                 </p>
