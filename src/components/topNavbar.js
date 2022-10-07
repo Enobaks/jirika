@@ -1,33 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProfilePicture from "../images/profile2.png";
+import { ResponsiveContext } from "../context/ResponsiveContext";
 
-const topNavbar = ({ responsiveNavBar }) => {
+const TopNavbar = () => {
+  const { toggleLayout, sideNav } = useContext(ResponsiveContext);
+  console.log(toggleLayout);
+  console.log(sideNav);
   return (
     <div className="nav_container w-full h-16 mb-16 mt-4">
       <div className="nav-wrap flex flex-row justify-between items-center w-11/12 h-full lg:p-3.5 m-auto">
-        <div className="menu-bar lg:hidden" onClick={responsiveNavBar}>
+        <div className="menu-bar lg:hidden" onClick={toggleLayout}>
           <i className="fa-solid fa-bars text-xl"></i>
         </div>
-        <div className="nat flex justify-between md:w-1/2 w-9/12 lg:w-full">
-          <div className="search-icon lg:hidden flex items-center">
+        <div className="nat flex justify-between md:w-9/12 w-9/12 lg:w-full">
+          <div className="search-icon md:hidden flex items-center">
             <i className="fa-solid fa-magnifying-glass text-xl"></i>
           </div>
-          <div className="hidden lg:block search-wrap w-2/5 relative">
-            <form className=" hidden form-wrap lg:flex">
-              <i className="fa-solid fa-magnifying-glass absolute top-3 left-3 text-placeholder-txt"></i>
+          <div className="hidden md:block search-wrap w-2/5 md:w-9/12 relative">
+            <form className=" hidden form-wrap md:flex">
+              <i className="fa-solid fa-magnifying-glass absolute top-2 left-3 text-placeholder-txt"></i>
               <input
                 type="text"
-                className="h-8 lg:h-10 px-3 rounded-md border-2 border-gray-500 mr-2 text-black w-11/12 pl-10 "
-                placeholder="Type to search..."
+                className="h-8 lg:h-10 px-3 rounded-md border-2 bg-search  mr-2 text-black w-11/12 pl-10 "
+                placeholder="Search..."
               />
-              <button className="bg-primary w-20 flex items-center justify-center rounded-md h-8 lg:h-9 text-white text-sm lg:text-lg px-5 hover:bg-primary-drk">
+              {/* <button className=" hidden bg-primary w-20 flex items-center justify-center rounded-md h-8 lg:h-9 text-white text-sm lg:text-lg px-5 hover:bg-primary-drk">
                 Search
-              </button>
-              <i className="fa-solid fa-magnifying-glass absolute top-3 left-3 text-placeholder-txt"></i>
+              </button> */}
+              {/* <i className="fa-solid fa-magnifying-glass absolute top-4 left-3 text-placeholder-txt"></i> */}
             </form>
           </div>
 
-          <div className="laptop-size w-3/4 flex lg:w-3/12 justify-between items-center">
+          <div className="laptop-size w-3/4 md:w-5/12 flex lg:w-3/12 justify-between items-center">
             <svg
               width="25"
               height="25"
@@ -85,4 +89,4 @@ const topNavbar = ({ responsiveNavBar }) => {
   );
 };
 
-export default topNavbar;
+export default TopNavbar;

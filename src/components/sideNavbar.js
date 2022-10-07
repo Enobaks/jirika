@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ResponsiveContext } from "../context/ResponsiveContext";
 import logo from "../images/jirika-logo.png";
 import "./sideNavbar.css";
 
-const SideNavbar = ({ responsiveNavBar, open }) => {
+const SideNavbar = () => {
+  const { toggleLayout, sideNav } = useContext(ResponsiveContext);
+
   return (
     <div
       className={` sideNavContainer ${
-        !open ? "w-56" : "w-0"
+        !sideNav ? "w-56" : "w-0"
       } h-screen fixed duration-300 bg-white z-20 drop-shadow-md lg:flex flex-col items-center justify-between `}
     >
       <div className="logo flex mt-6 mb-5">
         <div
           className={` ${
-            open && "hidden"
+            sideNav && "hidden"
           }  logo-wrap flex justify-around lg:justify-center items-center w-full`}
         >
           <div className="sg flex items-center w-28">
@@ -22,7 +25,7 @@ const SideNavbar = ({ responsiveNavBar, open }) => {
 
           <i
             className="fa-solid fa-xmark lg:hidden text-2xl text-red-600"
-            onClick={responsiveNavBar}
+            onClick={toggleLayout}
           ></i>
         </div>
       </div>
@@ -45,7 +48,7 @@ const SideNavbar = ({ responsiveNavBar, open }) => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className={`${open ? "hidden" : "block"}`}>Home</span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>Home</span>
           </li>
         </Link>
         <Link to="order" className="w-full mb-9 flex justify-center">
@@ -62,7 +65,9 @@ const SideNavbar = ({ responsiveNavBar, open }) => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${open ? "hidden" : "block"}`}>Collection</span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>
+              Collection
+            </span>
           </li>
         </Link>
         <Link to="saveditem" className="w-full mb-9 flex justify-center">
@@ -81,7 +86,9 @@ const SideNavbar = ({ responsiveNavBar, open }) => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${open ? "hidden" : "block"}`}>Transaction</span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>
+              Transaction
+            </span>
           </li>
         </Link>
         <Link to="/" className="w-full mb-9 flex justify-center">
@@ -105,7 +112,7 @@ const SideNavbar = ({ responsiveNavBar, open }) => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${open ? "hidden" : "block"}`}>Reminder</span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>Reminder</span>
           </li>
         </Link>
       </ul>

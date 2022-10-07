@@ -10,6 +10,7 @@ module.exports = {
         primary: "#2D2F7E",
         arc: "#e4e4ec",
         mute: "rgba(0, 0, 0, 0.2)",
+        search: "#e8e5f9",
         completed: "#FFB961",
         live: "#35A500",
         book: "#4339F2",

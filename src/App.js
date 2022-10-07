@@ -1,21 +1,25 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Index from "./pages";
+import UserDashboard from "./pages/UserDashboard";
+import Waitlist from "./pages/Waitlist";
 import Home from "./pages/home";
+import ResponsiveContextProvider from "./context/ResponsiveContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index />}>
-          <Route index element={<Home />} />
-          <Route index element={<Home />} />
-          <Route index element={<Home />} />
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ResponsiveContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Waitlist />} />
+          <Route path="/user.jirika" element={<UserDashboard />}>
+            <Route index element={<Home />} />
+            <Route index element={<Home />} />
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ResponsiveContextProvider>
   );
 }
 
