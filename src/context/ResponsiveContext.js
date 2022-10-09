@@ -8,10 +8,10 @@ const ResponsiveContextProvider = (props) => {
     bar: false,
   });
   const toggleLayout = () => {
-    setState(!state.sideNav);
+    setState({ sideNav: !state.sideNav });
   };
   const toggleBar = () => {
-    setState(!state.bar);
+    setState({ bar: !state.bar });
   };
   return (
     <ResponsiveContext.Provider value={{ ...state, toggleLayout, toggleBar }}>

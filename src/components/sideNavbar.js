@@ -5,18 +5,19 @@ import logo from "../images/jirika-logo.png";
 import "./sideNavbar.css";
 
 const SideNavbar = () => {
-  const { toggleLayout, state } = useContext(ResponsiveContext);
-
+  const { toggleLayout, sideNav } = useContext(ResponsiveContext);
+  console.log(sideNav);
+  console.log(toggleLayout);
   return (
     <div
       className={` sideNavContainer ${
-        !state.sideNav ? "w-56" : "w-0"
+        !sideNav ? "w-56" : "w-0"
       } h-screen fixed duration-300 bg-white z-20 drop-shadow-md lg:flex flex-col items-center justify-between `}
     >
       <div className="logo flex mt-6 mb-5">
         <div
           className={` ${
-            state.sideNav && "hidden"
+            sideNav && "hidden"
           }  logo-wrap flex justify-around lg:justify-center items-center w-full`}
         >
           <div className="sg flex items-center w-28">
@@ -48,9 +49,7 @@ const SideNavbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className={`${state.sideNav ? "hidden" : "block"}`}>
-              Home
-            </span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>Home</span>
           </li>
         </Link>
         <Link to="order" className="w-full mb-9 flex justify-center">
@@ -67,7 +66,7 @@ const SideNavbar = () => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${state.sideNav ? "hidden" : "block"}`}>
+            <span className={`${sideNav ? "hidden" : "block"}`}>
               Collection
             </span>
           </li>
@@ -88,7 +87,7 @@ const SideNavbar = () => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${state.sideNav ? "hidden" : "block"}`}>
+            <span className={`${sideNav ? "hidden" : "block"}`}>
               Transaction
             </span>
           </li>
@@ -114,9 +113,7 @@ const SideNavbar = () => {
                 fill="#191A3F"
               />
             </svg>
-            <span className={`${state.sideNav ? "hidden" : "block"}`}>
-              Reminder
-            </span>
+            <span className={`${sideNav ? "hidden" : "block"}`}>Reminder</span>
           </li>
         </Link>
       </ul>
