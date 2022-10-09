@@ -4,10 +4,20 @@ import { ResponsiveContext } from "../context/ResponsiveContext";
 
 const TopNavbar = () => {
   const { toggleLayout, sideNav } = useContext(ResponsiveContext);
-  console.log(toggleLayout);
-  console.log(sideNav);
+
   return (
     <div className="nav_container w-full h-16 mb-16 mt-4">
+      <div
+        className={`mobileSearch bg-primary w-full h-12 md:hidden flex justify-center items-center ${
+          !sideNav ? "h-12" : "h-0"
+        }`}
+      >
+        <input
+          type="text"
+          placeholder="Search"
+          className="h-8 px-3 rounded-md"
+        />
+      </div>
       <div className="nav-wrap flex flex-row justify-between items-center w-11/12 h-full lg:p-3.5 m-auto">
         <div className="menu-bar lg:hidden" onClick={toggleLayout}>
           <i className="fa-solid fa-bars text-xl"></i>
