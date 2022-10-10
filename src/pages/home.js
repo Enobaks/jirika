@@ -102,14 +102,14 @@ const Home = () => {
                 alt="Singles Party"
                 className="md:w-4/5 lg:w-auto h-auto"
               />
-              <div className="single-party-text absolute top:0 md:top-60 lg:top-  28 lg:left-2 left-3 md:left-14">
-                <p className="text-2xl text-white font-extrabold">
+              <div className="single-party-text absolute top-32 left-3 md:top-60 lg:top-28 lg:left-2  md:left-14">
+                <p className="text-lg md:text-2xl text-white font-extrabold">
                   Ph Singles Party 2021.
                 </p>
-                <p className="text-sm text-white">
+                <p className=" hidden md:block text-sm text-white">
                   In the city of Port Harcourt
                 </p>
-                <p className="text-sm font-bold text-white mt-2">
+                <p className="text-sm font-semibold md:font-bold text-white mt-2">
                   Multi Ticket Available
                 </p>
               </div>
@@ -120,14 +120,14 @@ const Home = () => {
                 alt="Bole Festival"
                 className="md:w-4/5 lg:w-auto h-auto"
               />
-              <div className="single-party-text absolute top-0 md:top-60 lg:top-24 lg:left-2 md:left-14 left-3">
-                <p className="text-2xl text-white font-extrabold">
+              <div className="single-party-text absolute top-28 md:top-60 lg:top-24 lg:left-2 md:left-14 left-3">
+                <p className="text-lg md:text-2xl text-white font-extrabold">
                   BoleFestival 2022.
                 </p>
-                <p className="text-sm text-white">
+                <p className=" hidden md:block text-sm text-white">
                   In the city of Port Harcourt
                 </p>
-                <p className="text-sm font-bold text-white mt-2">
+                <p className="text-sm font-semibold md:font-bold text-white mt-2">
                   Multi Ticket Available
                 </p>
               </div>
@@ -163,7 +163,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-2 md:mr-6">
                 <svg
                   width="18"
                   height="18"
@@ -192,7 +192,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-2 md:mr-6">
                 <svg
                   width="18"
                   height="18"
@@ -227,7 +227,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-2 md:mr-6">
                 <svg
                   width="18"
                   height="18"
@@ -262,7 +262,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-2 md:mr-6">
                 <svg
                   width="18"
                   height="18"
@@ -297,7 +297,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-primary rounded-md mr-2 md:mr-6">
                 <svg
                   width="18"
                   height="18"
@@ -332,7 +332,7 @@ const Home = () => {
           </div>
           <div className="transaction flex justify-between mb-8">
             <div className="tick flex">
-              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-completed rounded-md mr-6">
+              <div className="transaction-status w-9 h-10 flex justify-center items-center bg-completed rounded-md mr-2 md:mr-6">
                 <svg
                   width="19"
                   height="18"
