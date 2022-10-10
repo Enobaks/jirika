@@ -3,18 +3,14 @@ import React, { createContext, useState } from "react";
 export const ResponsiveContext = createContext();
 
 const ResponsiveContextProvider = (props) => {
-  const [state, setState] = useState({
-    sideNav: false,
-    bar: false,
-  });
+  const [state, setState] = useState(false);
   const toggleLayout = () => {
-    setState({ sideNav: !state.sideNav });
+    setState(!state);
+    console.log("clicked Layout");
   };
-  const toggleBar = () => {
-    setState({ bar: !state.bar });
-  };
+
   return (
-    <ResponsiveContext.Provider value={{ ...state, toggleLayout, toggleBar }}>
+    <ResponsiveContext.Provider value={{ state, toggleLayout }}>
       {props.children}
     </ResponsiveContext.Provider>
   );

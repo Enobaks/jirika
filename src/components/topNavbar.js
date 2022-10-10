@@ -1,29 +1,42 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ProfilePicture from "../images/profile2.png";
 import { ResponsiveContext } from "../context/ResponsiveContext";
 
 const TopNavbar = () => {
-  const { toggleLayout, sideNav } = useContext(ResponsiveContext);
+  const { toggleLayout } = useContext(ResponsiveContext);
+  const [searchBar, setSearchBar] = useState(false);
+  const toggleSearch = () => {
+    setSearchBar(!searchBar);
+  };
 
   return (
-    <div className="nav_container w-full h-16 mb-16 mt-4">
+    <div className="nav_container w-full h-16 mb-16 mt-4 relative">
       <div
-        className={`mobileSearch bg-primary w-full h-12 md:hidden flex justify-center items-center ${
-          !sideNav ? "h-12" : "h-0"
+        className={`mobileSearch bg-primary absolute -top-4 z-10 w-full h-12 md:hidden flex justify-around items-center duration-300 ${
+          !searchBar ? "h-20" : "h-0"
         }`}
       >
         <input
           type="text"
           placeholder="Search"
-          className="h-8 px-3 rounded-md"
+          className={`h-10 px-3 rounded-md ${!searchBar ? "block" : "hidden"}`}
         />
+        <i
+          className={`${
+            !searchBar ? "block" : "hidden"
+          } fa-solid fa-xmark lg:hidden text-2xl text-red-600`}
+          onClick={toggleSearch}
+        ></i>
       </div>
       <div className="nav-wrap flex flex-row justify-between items-center w-11/12 h-full lg:p-3.5 m-auto">
         <div className="menu-bar lg:hidden" onClick={toggleLayout}>
           <i className="fa-solid fa-bars text-xl"></i>
         </div>
         <div className="nat flex justify-between md:w-9/12 w-9/12 lg:w-full">
-          <div className="search-icon md:hidden flex items-center">
+          <div
+            className="search-icon md:hidden flex items-center"
+            onClick={toggleSearch}
+          >
             <i className="fa-solid fa-magnifying-glass text-xl"></i>
           </div>
           <div className="hidden md:block search-wrap w-2/5 md:w-9/12 relative">
