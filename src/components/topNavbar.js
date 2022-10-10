@@ -4,7 +4,7 @@ import { ResponsiveContext } from "../context/ResponsiveContext";
 
 const TopNavbar = () => {
   const { toggleLayout } = useContext(ResponsiveContext);
-  const [searchBar, setSearchBar] = useState(false);
+  const [searchBar, setSearchBar] = useState(true);
   const toggleSearch = () => {
     setSearchBar(!searchBar);
   };
@@ -19,7 +19,9 @@ const TopNavbar = () => {
         <input
           type="text"
           placeholder="Search"
-          className={`h-10 px-3 rounded-md ${!searchBar ? "block" : "hidden"}`}
+          className={`h-10 px-3 search outline-none rounded-md ${
+            !searchBar ? "block" : "hidden"
+          }`}
         />
         <i
           className={`${

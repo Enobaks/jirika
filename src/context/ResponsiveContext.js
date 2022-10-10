@@ -3,10 +3,9 @@ import React, { createContext, useState } from "react";
 export const ResponsiveContext = createContext();
 
 const ResponsiveContextProvider = (props) => {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(true);
   const toggleLayout = () => {
     setState(!state);
-    console.log("clicked Layout");
   };
 
   return (
